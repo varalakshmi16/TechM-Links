@@ -1,0 +1,206 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qj\cf1\b\f0\fs22\lang9 Q #1) What is DBMS used for?\cf0\par
+\b0\tab Ans: DBMS, commonly known as Database Management System, is an application system whose main purpose revolves around the data. This is a system that allows its users to store the data, define it, retrieve it and update the information about the data inside the database.\par
+\cf1\b Q #2) What is meant by a Database?\cf0\b0\par
+Ans: In simple terms, Database is a collection of data in some organized way to facilitate its user\rquote s to easily access, manage and upload the data.\par
+\cf1\b Q #3) Why is the use of DBMS recommended? Explain by listing some of its major advantages.\par
+\cf0\b0 Ans: Some of the major advantages of DBMS are as follows:\par
+Controlled Redundancy: DBMS supports a mechanism to control redundancy of data inside the database by integrating all the data into a single database and as data is stored at only one place, the duplicity of data does not happen.\par
+\b Data Sharing\b0 : Sharing of data among multiple users simultaneously can also be done in DBMS as the same database will be shared among all the users and by different application programs.\par
+\b Backup and Recovery Facility\b0 : DBMS minimizes the pain of creating the backup of data again and again by providing a feature of \lquote backup and recovery\rquote  which automatically creates the data backup and restores the data whenever required.\par
+\b Enforcement of Integrity Constraints\b0 : Integrity Constraints are very important to be enforced on the data so that the refined data after putting some constraints are stored in the database and this is followed by DBMS.\par
+\b Independence of Data\b0 : It simply means that you can change the structure of the data without affecting the structure of any of the application programs.\par
+\cf1\b Q #4) What is the purpose of normalization in DBMS?\par
+\cf0\b0 Ans: Normalization is the process of analyzing the relational schemas which are based on their respective functional dependencies and the primary keys in order to fulfill certain properties.\par
+The properties include:\par
+To minimize the redundancy of the Data.\par
+To minimize the Insert, Delete and Update Anomalies.\par
+\cf1\b Q #5) What are the different types of languages that are available in the DBMS?\par
+\cf0\b0 Ans: Basically, there are 3 types of languages in the DBMS as mentioned below:\par
+DDL: DDL is Data Definition Language which is used to define the database and schema structure by using some set of SQL Queries like CREATE, ALTER, TRUNCATE, DROP and RENAME.\par
+DCL: DCL is Data Control Language which is used to control the access of the users inside the database by using some set of SQL Queries like GRANT and REVOKE.\par
+DML: DML is Data Manipulation Language which is used to do some manipulations in the database like Insertion, Deletion, etc. by using some set of SQL Queries like SELECT, INSERT, DELETE and UPDATE.\par
+\cf1\b Q #6) What is the purpose of SQL?\par
+\cf0\b0 Ans: SQL stands for Structured Query Language whose main purpose is to interact with the relational databases in the form of inserting and updating/modifying the data in the database.\par
+\cf1\b Q #7) Explain the concepts of a Primary key and Foreign Key.\par
+\cf0\b0 Ans: Primary Key is used to uniquely identify the records in a database table while Foreign Key is mainly used to link two or more tables together as this is a particular field(s) in one of the database tables which are the primary key of some other table.\par
+Example: There are 2 tables \f1\endash  Employee and Department and both have one common field/column as \lquote ID\rquote  where ID is the primary key of the Employee table while this is the foreign key for the Department table.\par
+\cf1\b Q #8) What are the main differences between Primary key and Unique Key?\par
+\cf0\b0 Ans: Given below are few differences:\par
+The main difference between the Primary key and Unique key is that the Primary key can never have a null value while the Unique key may consist of null value.\par
+In each table, there can be only one primary key while there can be more than one unique key in a table.\par
+\cf1\b Q #9) What is the concept of sub-query in terms of SQL?\par
+\cf0\b0 Ans: Sub-query is basically the query which is included inside some other query and can also be called as an inner query which is found inside the outer query.\par
+\cf1\b Q #10) What is the use of DROP command and what are the differences between DROP, TRUNCATE and DELETE commands?\par
+\cf0\b0 Ans: DROP command is a DDL command which is used to drop/delete the existing table, database, index or view from the database.\par
+The major difference between DROP, TRUNCATE and DELETE commands are:\par
+DROP and TRUNCATE commands are the DDL Commands which are used to delete tables from the database and once the table gets deleted, all the privileges and indexes that are related to the table also get deleted. These 2 operations cannot be rolled back and so should be used with great care.\par
+DELETE Command, on the other hand, is a DML Command which is also used to delete rows from the table and this can be rolled back.\par
+Note: It is recommended to use \lquote Where\rquote  clause along with the DELETE command else the complete table will get deleted from the database.\par
+\cf1\b Q #11) What is the main difference between UNION and UNION ALL?\cf0\b0\par
+Ans: UNION and UNION ALL are used to join the data from 2 or more tables but UNION removes duplicate rows and picks the rows which are distinct after combining the data from the tables whereas UNION ALL does not remove the duplicate rows, it just picks all the data from the tables.\par
+\cf1\b Q #12) Explain the concept of ACID properties in DBMS?\par
+\cf0\b0 Ans: ACID properties is the combination of Atomicity, Consistency, Isolation, and Durability properties. These properties are very helpful in allowing a safe and secure way of sharing the data among multiple users.\par
+
+\pard\li720\sa200\sl276\slmult1\qj Atomicity: This is based on the concept of \ldblquote either all or nothing\rdblquote  which basically means that if any update occurs inside the database then that update should either be available to all the others beyond user and application program or it should not be available to anyone beyond the user and application program.\par
+Consistency: This ensures that the consistency is maintained in the database before or after any transaction that takes place inside the database.\par
+Isolation: As the name itself suggests, this property states that each transaction that is occurring is in isolation with others i.e. a transaction which has started but not yet completed should be in isolation with others so that the other transaction does not get impacted with this transaction.\par
+Durability: This property states that the data should always be in a durable state i.e. any data which is in the committed state should be available in the same state even if any failure or restart occurs in the system.\par
+
+\pard\sa200\sl276\slmult1\qj\cf1\b Q #13) What is Correlated Subquery in DBMS?\cf0\b0\par
+Ans: A Subquery is also known as a nested query i.e. a query written inside some query. When a Subquery is executed for each of the rows of the outer query then it is termed as a Correlated Subquery.\par
+Example of Non-Correlated Subquery is:\par
+Select * from EMP where \lquote RIYA\rquote  IN (Select Name from DEPT where EMP.EMPID=DEPT.EMPID)\par
+Here, inner query is not executed for each of the rows of the outer query.\par
+\cf1\b Q #14) Explain Entity, Entity Type, and Entity Set in DBMS?\par
+\cf0\b0 Ans: Entity is an object, place or thing which has its independent existence in the real world and about which data can be stored in a database. Eg: any person, book, etc.\par
+Entity Type is a collection of the entities which have the same attributes. Eg: STUDENT table contains rows in which each row is an entity holding attributes like name, age , and id of the students, hence STUDENT is an Entity Type which holds the entities having same attributes.\par
+Entity Set is a collection of the entities of the same type. Eg: A collection of the employees of a firm.\par
+\cf1\b Q #15) What are the different levels of abstraction in the DBMS?\par
+\cf0\b0 Ans: There are 3 levels of data abstraction in the DBMS.\par
+They include:\par
+Physical Level: This is the lowest level of the data abstraction which states how the data is stored in the database.\par
+Logical Level: This is the next level of the data abstraction which states the type of the data and the relationship among the data that is stored in the database.\par
+View Level: This is the highest level in the data abstraction which shows/states only a part of the database.\par
+\cf1\b Q #16) What integrity rules exist in the DBMS?\par
+\cf0\b0 Ans: There are 2 major integrity rules that exist in the DBMS.\par
+They are:\par
+Entity Integrity: This states a very important rule that value of a Primary key can never have a NULL value.\par
+Referential Integrity: This rule is related to the Foreign key which states that either the value of a Foreign key is a NULL value or it should be the primary key of any other relation.\par
+\cf1\b Q #17) What is E-R model in the DBMS?\par
+\cf0\b0 Ans: E-R model is known as an Entity-Relationship model in the DBMS which is based on the concept of the Entities and the relationship that exists among these entities.\par
+\cf1\b Q #18) What is a functional dependency in the DBMS?\par
+\cf0\b0 Ans: This is basically a constraint which is useful in describing the relationship among the different attributes in a relation.\par
+Example: If there is some relation \lquote R1\rquote  which has 2 attributes as Y and Z then the functional dependency among these 2 attributes can be shown as Y->Z which states that Z is functionally dependent on Y.\par
+\cf1\b Q #19) What is 1NF in the DBMS?\par
+\cf0\b0 Ans: 1NF is known as the First Normal Form.\par
+This is the easiest form of the normalization process which states that the domain of an attribute should have only atomic values. The objective of this is to remove the duplicate columns that are present in the table.\par
+\cf1\b Q #20) What is 2NF in the DBMS?\par
+\cf0\b0 Ans: 2NF is the Second Normal Form.\par
+Any table is said to have in the 2NF if it satisfies the following 2 conditions:\par
+A table is in the 1NF.\par
+Each non-prime attribute of a table is said to be functionally dependent in totality on the primary key.\par
+\cf1\b Q #21) What is 3NF in the DBMS?\par
+\cf0\b0 Ans: 3NF is the Third Normal Form.\par
+Any table is said to have in the 3NF if it satisfies the following 2 conditions:\par
+A table is in the 2NFm.\par
+Each non-prime attribute of a table is said to be non-transitively dependent on every key of the table.\par
+\cf1\b Q #22) What is BCNF in the DBMS?\par
+\cf0\b0 Ans: BCNF is the Boyce Codd Normal Form which is stricter than the 3NF.\par
+Any table is said to have in the BCNF if it satisfies the following 2 conditions:\par
+A table is in the 3NF.\par
+For each of the functional dependency X->Y that exists, X is the super key of a table.\par
+\cf1\b Q #23) What is a CLAUSE in terms of SQL?\par
+\cf0\b0 Ans: This is used with the SQL queries to fetch a specific data as per the requirements on the basis of the conditions that are put in the SQL. This is very helpful in picking the selective records from the complete set of the records.\par
+Example: There is a query which has WHERE condition or the query with the HAVING clause.\par
+\cf1\b Q #24) How can you get the alternate records from the table in the SQL?\par
+\cf0\b0 Ans: If you want to fetch the odd numbers then the following query can be used:\par
+\f0\lang1033\tab\f1\lang9 Select EmpId from (Select rowno,EmpId from Emp) where mod(rowno,2)=1\par
+If you want to fetch the even numbers then the following query can be used:\par
+\f0\lang1033\tab\f1\lang9 Select EmpId from (Select rowno,EmpId from Emp) where mod(rowno,2)=0\par
+\cf1\b Q #25) How is the pattern matching done in the SQL?\par
+\cf0\b0 Ans: With the help of the LIKE operator, pattern matching is possible in the SQL.\rquote %\rquote  is used with the Like operator when it matches with the 0 or more characters and \lquote _\rquote  is used to match the one particular character.\par
+Example:\par
+Select * from Emp where name like \lquote b%\rquote\par
+Select * from Emp where name like \lquote hans_\rquote\par
+\cf1\b Q #26) What is a join in the SQL?\par
+\cf0\b0 Ans: A Join is one of the SQL statements which is used to join the data or the rows from 2 or more tables on the basis of a common field/column among them.\par
+\cf1\b Q #27) What are different types of joins in the SQL?\par
+\cf0\b0 Ans: There are 4 types of SQL Joins:\par
+Inner Join: This type of join is used to fetch the data among the tables which are common in both the tables.\par
+Left Join: This returns all the rows from the table which is on the left side of the join but only the matching rows from the table which is on the right side of the join.\par
+Right Join: This returns all the rows from the table which is on the right side of the join but only the matching rows from the table which is on the left side of the join.\par
+Full Join: This returns the rows from all the tables on which the join condition has put and the rows which do not match hold null values.\par
+\cf1\b Q #28) What is meant by trigger?\par
+\cf0\b0 Ans: Trigger is one of the very important codes or programs which get executed automatically in response to the events that occur in a table or a view. Eg: If a new record is inserted in an employee database then the data gets created automatically in the related tables like salary, department and roles tables.\par
+\cf1\b Q #29) Explain Stored Procedure.\par
+\cf0\b0 Ans: Stored Procedure is a group of SQL statements in the form of a function which has some unique name and is stored in a relational database management systems(RDBMS) and can be accessed whenever required.\par
+\cf1\b Q #30) What is RDBMS?\par
+\cf0\b0 Ans: RDBMS is the Relational Database Management System which contains data in the form of the tables and data is accessed on the basis of the common fields among the tables.\par
+\cf1\b Q #31) What are the different type of relationships in the DBMS?\par
+\cf0\b0 Ans: Relationships in DBMS depicts an association between the tables.\par
+Different types of relationships are:\par
+One-to-One: This basically states that there should be a one-to-one relationship between the tables i.e. there should be one record in both the tables. Eg: Among a married couple, both wife and husband can have only one spouse.\par
+One-to-Many: This states that there can be many relationships for one i.e. a primary key table hold only one record which can have many, one or none records in the related table. Eg: A Mother can have many children.\par
+Many-to-Many: This states that both the tables can be related to many other tables. Eg: One can have many siblings and so do they have.\par
+\par
+\cf1\b\f0\lang1033 REFER : Tricky Query Writing\par
+{\cf0\b0{\field{\*\fldinst{HYPERLINK https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html }}{\fldrslt{https://www.java67.com/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html\ul0\cf0}}}}\cf0\b0\f0\fs22\par
+\cf1\b Question #32) Why do we use SQL constraints? Which constraints we can use while creating database in SQL?\cf0\b0\par
+Constraints are defined while creating the database itself with CREATE TABLE statement or even after the table is created once with ALTER TABLE statement.\par
+There are 5 major constraints are used in SQL, such as\par
+NOT NULL: That indicates that the column must have some value and cannot be left null\par
+UNIQUE: This constraint is used to ensure that each row and column has unique value and no value is being repeated in any other row or column\par
+PRIMARY KEY: This constraint is used in association with NOT NULL and UNIQUE constraints such as on one or the combination of more than one columns to identify the particular record with a unique identity.\par
+FOREIGN KEY: It is used to ensure the referential integrity of data in the table and also matches the value in one table with another using Primary Key\par
+CHECK: It is used to ensure whether the value in columns fulfills the specified condition\par
+\cf1\b Question #33) What are transaction and its controls?\cf0\b0\par
+A transaction can be defined as the sequence task that is performed on databases in a logical manner to gain certain results. Operations performed like Creating, updating, deleting records in the database comes from transactions.\par
+In simple word, we can say that a transaction means a group of SQL queries executed on database records.\par
+There are 4 transaction controls such as\par
+COMMIT: It is used to save all changes made through the transaction\par
+ROLLBACK: It is used to roll back the transaction such as all changes made by the transaction are reverted back and database remains as before\par
+SET TRANSACTION: Set the name of transaction\par
+SAVEPOINT: It is used to set the point from where the transaction is to be rolled back\par
+\cf1\b Question #34) How many Aggregate Functions are available there in SQL?\cf0\b0\par
+SQL Aggregate Functions calculates values from multiple columns in a table and returns a single value.\par
+There are 7 aggregate functions we use in SQL\par
+
+\pard\li720\sa200\sl276\slmult1\qj AVG(): Returns the average value from specified columns\par
+COUNT(): Returns number of table rows\par
+MAX(): Returns largest value among the records\par
+MIN(): Returns smallest value among the records\par
+SUM(): Returns the sum of specified column values\par
+FIRST(): Returns the first value\par
+LAST(): Returns Last value\par
+
+\pard\sa200\sl276\slmult1\qj\cf1\b Question #35) What are Scalar Functions in SQL?\cf0\b0\par
+Scalar Functions are used to return a single value based on the input values. Scalar Functions are as follows\par
+
+\pard\li720\sa200\sl276\slmult1\qj UCASE(): Converts the specified field in upper case\par
+LCASE(): Converts the specified field in lower case\par
+MID(): Extracts and returns character from text field\par
+FORMAT(): Specifies the display format\par
+LEN(): Specifies the length of text field\par
+ROUND(): Rounds up the decimal field value to a number\par
+
+\pard\sa200\sl276\slmult1\qj\cf1\b Question #36) What is View in SQL?\par
+\cf0\b0 A View can be defined as a virtual table that contains rows and columns with fields from one or more table.\par
+Syntax: CREATE VIEW view_name AS\par
+SELECT column_name(s)\par
+FROM table_name\par
+WHERE condition\par
+\cf1\b Question #37) How we can update the view?\cf0\b0\par
+SQL CREATE and REPLACE can be used for updating the view.\par
+Following query syntax is to be executed to update the created view\par
+Syntax: CREATE OR REPLACE VIEW view_name AS\par
+SELECT column_name(s)\par
+FROM table_name\par
+WHERE condition\par
+\cf1\b Question #38) What is the difference between clustered and non-clustered indexes?\par
+\cf0\b0 One table can have only one clustered index but multiple nonclustered indexes.\par
+Clustered indexes can be read rapidly rather than non-clustered indexes.\par
+Clustered indexes store data physically in the table or view and non-clustered indexes do not store data in table as it has separate structure from data row\par
+\cf1\b Question #39) What is a Cursor?\par
+\cf0\b0 A cursor is a database object which is used to manipulate data in a row-to-row manner.\par
+Cursor follows steps as given below\par
+
+\pard\li720\sa200\sl276\slmult1\qj Declare Cursor\par
+Open Cursor\par
+Retrieve row from the Cursor\par
+Process the row\par
+Close Cursor\par
+Deallocate Cursor\par
+
+\pard\sa200\sl276\slmult1\qj\cf1\b Q#40. What are the advantages of Views?\cf0\b0\par
+Ans. Advantages of Views:\par
+Views restrict access to the data because the view can display selective columns from the table.\par
+Views can be used to make simple queries to retrieve the results of complicated queries. For example, views can be used to query information from multiple tables without the user knowing.\par
+\cf1\b Q#41. What is the difference between Having clause and Where clause? \cf0\b0\par
+Ans. Both specify a search condition but Having clause is used only with the SELECT statement and typically used with GROUP BY clause.\par
+If GROUP BY clause is not used then Having behaved like WHERE clause only.\par
+\lang9\par
+}
+ 
